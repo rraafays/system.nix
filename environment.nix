@@ -4,6 +4,7 @@
   environment = {
     enableAllTerminfo = true;
     systemPackages = with pkgs; [
+      btop
       fd
       nix-search
     ];
