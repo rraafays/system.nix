@@ -18,4 +18,6 @@ in
     ];
     sessionVariables.GOPATH = "$HOME/.go";
   };
+
+  programs.command-not-found.enable = false;
 }
