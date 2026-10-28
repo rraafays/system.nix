@@ -11,4 +11,4 @@ NixOS fragments for this machine, split by purpose. Imported from `configuration
 | `environment.nix`   | system packages, terminfo, `GOPATH`; disables `command-not-found` |
 | `documentation.nix` | man and NixOS doc options                             |
 
-Machine-unique settings (boot, hostname, wireless, iGPU `MESA_*` overrides) stay in **`configuration.nix`**, not here.
+Machine-unique settings (boot, hostname, wireless, iGPU `MESA_*` overrides) stay in **`configuration.nix`**, not here. PipeWire also appears in `desktop/` and `music/` so those modules stay usable without `./system`.
