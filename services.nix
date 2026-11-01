@@ -1,6 +1,15 @@
 {
   services = {
-    openssh.enable = true;
+    openssh = {
+      enable = true;
+      settings.AcceptEnv = [
+        "LANG"
+        "LC_*"
+        "LC_ALL"
+        "LANGUAGE"
+        "XMODIFIERS"
+      ];
+    };
     libinput.enable = true;
     printing.enable = true;
     pulseaudio.enable = false;

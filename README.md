@@ -7,7 +7,7 @@ NixOS fragments for this machine, split by purpose. Imported from `configuration
 | `autoupgrade.nix`   | Channel version, auto-upgrade, GC, nix store settings |
 | `security.nix`      | sudo, rtkit                                           |
 | `locale.nix`        | timezone, locales                                     |
-| `services.nix`      | openssh, pipewire, printing, libinput                 |
+| `services.nix`      | openssh (`AcceptEnv` without `COLUMNS`/`LINES`), pipewire, printing, libinput |
 | `environment.nix`   | system packages, terminfo, `GOPATH`; disables `command-not-found` |
 | `documentation.nix` | man and NixOS doc options                             |
 
