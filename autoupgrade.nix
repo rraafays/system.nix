@@ -10,7 +10,7 @@ in
     autoUpgrade = {
       enable = true;
       channel = "https://channels.nixos.org/nixos-${VERSION}";
-      dates = "10:00";
+      dates = "08:00";
       operation = "switch";
       runGarbageCollection = true;
     };
