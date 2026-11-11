@@ -15,6 +15,8 @@ in
       fd
       lf
       nix-search
+      p7zip
+      rar
     ];
     sessionVariables.GOPATH = "$HOME/.go";
   };
